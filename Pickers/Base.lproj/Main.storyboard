@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Single-->
         <scene sceneID="T1R-DE-BQP">
             <objects>
                 <viewController id="D9X-OQ-BGk" sceneMemberID="viewController">
@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="VMI-0P-Vrk"/>
+                    <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="VMI-0P-Vrk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlr-a5-rh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="831" y="490"/>
         </scene>
-        <!--Item 1-->
+        <!--Date-->
         <scene sceneID="pq4-Ak-2Ul">
             <objects>
                 <viewController id="SeJ-4v-t5W" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Moj-yx-6ah"/>
+                    <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="Moj-yx-6ah"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INs-UX-2Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,4 +66,8 @@
             <point key="canvasLocation" x="-121" y="162"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clockicon" width="24" height="24"/>
+        <image name="singleicon" width="25" height="24"/>
+    </resources>
 </document>
