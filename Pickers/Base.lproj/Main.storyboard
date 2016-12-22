@@ -26,7 +26,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlr-a5-rh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="490"/>
+            <point key="canvasLocation" x="830" y="459"/>
+        </scene>
+        <!--Dependent-->
+        <scene sceneID="UqB-d4-px2">
+            <objects>
+                <viewController id="Jpr-VZ-F4S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pO5-lV-FTZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="j8D-Ya-GQq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xDB-GU-Q7K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="c7v-RA-hDd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCU-jz-kcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="1370"/>
+        </scene>
+        <!--Custom-->
+        <scene sceneID="Ruo-Ed-gyV">
+            <objects>
+                <viewController id="WWb-JR-zVg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWd-el-f0B"/>
+                        <viewControllerLayoutGuide type="bottom" id="J8I-F6-dn9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sLq-C3-C3l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="dQ4-Kx-B0q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idc-LW-NXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="1370"/>
+        </scene>
+        <!--Double-->
+        <scene sceneID="USI-J3-NBC">
+            <objects>
+                <viewController id="Ap5-Jw-Dex" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R7c-Rs-4GV"/>
+                        <viewControllerLayoutGuide type="bottom" id="lZS-SQ-Zbh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oci-t8-S70">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Double" image="doubleicon" selectedImage="doubleicon" id="wY5-6w-nr9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPT-Ww-b4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="1369"/>
         </scene>
         <!--Date-->
         <scene sceneID="pq4-Ak-2Ul">
@@ -45,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INs-UX-2Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="-165"/>
+            <point key="canvasLocation" x="830" y="-245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QOR-Uh-0ma">
@@ -59,6 +116,9 @@
                     <connections>
                         <segue destination="SeJ-4v-t5W" kind="relationship" relationship="viewControllers" id="z9p-ry-uPi"/>
                         <segue destination="D9X-OQ-BGk" kind="relationship" relationship="viewControllers" id="HYk-Ik-U8K"/>
+                        <segue destination="Ap5-Jw-Dex" kind="relationship" relationship="viewControllers" id="Q1W-MC-eup"/>
+                        <segue destination="Jpr-VZ-F4S" kind="relationship" relationship="viewControllers" id="hec-MJ-KeP"/>
+                        <segue destination="WWb-JR-zVg" kind="relationship" relationship="viewControllers" id="tcq-bq-FrB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdw-DB-nVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,6 +128,9 @@
     </scenes>
     <resources>
         <image name="clockicon" width="24" height="24"/>
+        <image name="dependenticon" width="25" height="24"/>
+        <image name="doubleicon" width="25" height="24"/>
         <image name="singleicon" width="25" height="24"/>
+        <image name="toolicon" width="24" height="24"/>
     </resources>
 </document>
