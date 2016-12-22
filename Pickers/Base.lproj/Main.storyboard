@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,9 +97,39 @@
                     <view key="view" contentMode="scaleToFill" id="i4Y-l1-XRh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KSd-NS-LH5">
+                                <rect key="frame" x="28" y="0.0" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="504124047.84165001">
+                                    <!--2016-12-22 18:27:27 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="6311300400">
+                                    <!--2200-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z2-zg-y0r">
+                                <rect key="frame" x="165" y="250" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="SeJ-4v-t5W" eventType="touchUpInside" id="ljP-wK-cB2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5z2-zg-y0r" firstAttribute="top" secondItem="KSd-NS-LH5" secondAttribute="bottom" constant="34" id="9H1-ag-Npt"/>
+                            <constraint firstItem="KSd-NS-LH5" firstAttribute="top" secondItem="i4Y-l1-XRh" secondAttribute="topMargin" id="OYW-kt-BHD"/>
+                            <constraint firstItem="5z2-zg-y0r" firstAttribute="centerX" secondItem="i4Y-l1-XRh" secondAttribute="centerX" id="SFs-D1-QXm"/>
+                            <constraint firstItem="KSd-NS-LH5" firstAttribute="centerX" secondItem="i4Y-l1-XRh" secondAttribute="centerX" id="wXN-e3-wbi"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="Moj-yx-6ah"/>
+                    <connections>
+                        <outlet property="datePicker" destination="KSd-NS-LH5" id="cTp-RC-LGw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INs-UX-2Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
