@@ -21,13 +21,39 @@
                     <view key="view" contentMode="scaleToFill" id="38y-MK-iot">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-8s-Lm6">
+                                <rect key="frame" x="27" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="D9X-OQ-BGk" id="3Mj-H0-OrU"/>
+                                    <outlet property="delegate" destination="D9X-OQ-BGk" id="TS4-g3-0tY"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wg-eA-of9">
+                                <rect key="frame" x="165.5" y="243" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="D9X-OQ-BGk" eventType="touchUpInside" id="p1W-r9-gnY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LMa-8s-Lm6" firstAttribute="centerX" secondItem="38y-MK-iot" secondAttribute="centerX" id="NDw-RY-QSI"/>
+                            <constraint firstItem="LMa-8s-Lm6" firstAttribute="top" secondItem="38y-MK-iot" secondAttribute="top" id="WmD-Ty-vD2"/>
+                            <constraint firstItem="2wg-eA-of9" firstAttribute="top" secondItem="LMa-8s-Lm6" secondAttribute="bottom" constant="27" id="dT7-KE-9Tn"/>
+                            <constraint firstItem="LMa-8s-Lm6" firstAttribute="centerX" secondItem="38y-MK-iot" secondAttribute="centerX" id="g0e-u9-BfZ"/>
+                            <constraint firstItem="2wg-eA-of9" firstAttribute="centerX" secondItem="38y-MK-iot" secondAttribute="centerX" id="wRA-WW-xbP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="VMI-0P-Vrk"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="LMa-8s-Lm6" id="sXC-n0-opD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlr-a5-rh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="459"/>
+            <point key="canvasLocation" x="829.60000000000002" y="458.32083958020991"/>
         </scene>
         <!--Dependent-->
         <scene sceneID="UqB-d4-px2">
@@ -99,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KSd-NS-LH5">
-                                <rect key="frame" x="28" y="0.0" width="320" height="216"/>
+                                <rect key="frame" x="27" y="0.0" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="504124047.84165001">
                                     <!--2016-12-22 18:27:27 +0000-->
                                 </date>
@@ -111,7 +137,7 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z2-zg-y0r">
-                                <rect key="frame" x="165" y="250" width="44" height="30"/>
+                                <rect key="frame" x="165.5" y="250" width="44" height="30"/>
                                 <state key="normal" title="Select"/>
                                 <connections>
                                     <action selector="onButtonPressed:" destination="SeJ-4v-t5W" eventType="touchUpInside" id="ljP-wK-cB2"/>

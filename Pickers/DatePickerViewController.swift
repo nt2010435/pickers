@@ -15,6 +15,8 @@ class DatePickerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let date = NSDate()
+        datePicker.setDate(date as Date, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
