@@ -104,13 +104,38 @@
                     <view key="view" contentMode="scaleToFill" id="oci-t8-S70">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abb-ZI-XRV">
+                                <rect key="frame" x="27" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ap5-Jw-Dex" id="EdJ-wa-h1H"/>
+                                    <outlet property="delegate" destination="Ap5-Jw-Dex" id="Hb1-uS-P0t"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw9-Le-eO5">
+                                <rect key="frame" x="165" y="239" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="Ap5-Jw-Dex" eventType="touchUpInside" id="BSB-k7-emD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Abb-ZI-XRV" firstAttribute="top" secondItem="oci-t8-S70" secondAttribute="topMargin" id="9vJ-TG-a0l"/>
+                            <constraint firstItem="Abb-ZI-XRV" firstAttribute="centerX" secondItem="oci-t8-S70" secondAttribute="centerX" id="RTN-Or-k2c"/>
+                            <constraint firstItem="aw9-Le-eO5" firstAttribute="top" secondItem="Abb-ZI-XRV" secondAttribute="bottom" constant="23" id="jl8-ah-lOd"/>
+                            <constraint firstItem="aw9-Le-eO5" firstAttribute="centerX" secondItem="oci-t8-S70" secondAttribute="centerX" id="n3f-xm-OHl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" selectedImage="doubleicon" id="wY5-6w-nr9"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="Abb-ZI-XRV" id="Tga-L5-Och"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPT-Ww-b4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="1369"/>
+            <point key="canvasLocation" x="829.60000000000002" y="1368.6656671664168"/>
         </scene>
         <!--Date-->
         <scene sceneID="pq4-Ak-2Ul">
