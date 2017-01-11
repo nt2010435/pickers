@@ -66,13 +66,39 @@
                     <view key="view" contentMode="scaleToFill" id="xDB-GU-Q7K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smU-nF-ru9">
+                                <rect key="frame" x="28" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jpr-VZ-F4S" id="RSL-Id-kYr"/>
+                                    <outlet property="delegate" destination="Jpr-VZ-F4S" id="1rB-uz-HwZ"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gup-JS-6gy">
+                                <rect key="frame" x="165" y="241" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="Jpr-VZ-F4S" eventType="touchUpInside" id="EQX-yp-Wu6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gup-JS-6gy" firstAttribute="top" secondItem="smU-nF-ru9" secondAttribute="bottom" constant="25" id="3vc-mp-gga"/>
+                            <constraint firstItem="gup-JS-6gy" firstAttribute="centerX" secondItem="xDB-GU-Q7K" secondAttribute="centerX" id="7QA-9v-GGb"/>
+                            <constraint firstItem="smU-nF-ru9" firstAttribute="centerX" secondItem="xDB-GU-Q7K" secondAttribute="centerX" id="Ely-kd-0iO"/>
+                            <constraint firstItem="smU-nF-ru9" firstAttribute="centerX" secondItem="xDB-GU-Q7K" secondAttribute="centerX" id="cZc-ka-RwV"/>
+                            <constraint firstItem="smU-nF-ru9" firstAttribute="top" secondItem="xDB-GU-Q7K" secondAttribute="top" id="vlf-Ww-DBK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="c7v-RA-hDd"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="smU-nF-ru9" id="Bri-nz-d1i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCU-jz-kcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="1370"/>
+            <point key="canvasLocation" x="-7.2000000000000002" y="1369.5652173913045"/>
         </scene>
         <!--Custom-->
         <scene sceneID="Ruo-Ed-gyV">
