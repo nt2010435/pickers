@@ -111,13 +111,50 @@
                     <view key="view" contentMode="scaleToFill" id="sLq-C3-C3l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhg-dV-rzw">
+                                <rect key="frame" x="28" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WWb-JR-zVg" id="r8P-Js-jUp"/>
+                                    <outlet property="delegate" destination="WWb-JR-zVg" id="o9y-el-uSQ"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWc-KI-d2e">
+                                <rect key="frame" x="187.5" y="224" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.057744772614315543" green="1" blue="0.54558350379030596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-uK-oCb">
+                                <rect key="frame" x="171.5" y="241" width="31" height="30"/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spin:" destination="WWb-JR-zVg" eventType="touchUpInside" id="3D1-ik-P6A"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Qu-uK-oCb" firstAttribute="centerX" secondItem="sLq-C3-C3l" secondAttribute="centerX" id="5Np-RE-0a0"/>
+                            <constraint firstItem="0Qu-uK-oCb" firstAttribute="centerX" secondItem="sLq-C3-C3l" secondAttribute="centerX" id="8U8-Pr-oHD"/>
+                            <constraint firstItem="Yhg-dV-rzw" firstAttribute="top" secondItem="sLq-C3-C3l" secondAttribute="top" id="CyE-XM-1kM"/>
+                            <constraint firstItem="kWc-KI-d2e" firstAttribute="centerX" secondItem="sLq-C3-C3l" secondAttribute="centerX" id="Qf9-1A-izk"/>
+                            <constraint firstItem="0Qu-uK-oCb" firstAttribute="top" secondItem="kWc-KI-d2e" secondAttribute="bottom" constant="17" id="Uo5-TF-ZC1"/>
+                            <constraint firstItem="kWc-KI-d2e" firstAttribute="top" secondItem="Yhg-dV-rzw" secondAttribute="bottom" constant="8" id="Z6k-7l-tEX"/>
+                            <constraint firstItem="kWc-KI-d2e" firstAttribute="top" secondItem="Yhg-dV-rzw" secondAttribute="bottom" constant="8" id="vJr-3b-AS5"/>
+                            <constraint firstItem="Yhg-dV-rzw" firstAttribute="centerX" secondItem="sLq-C3-C3l" secondAttribute="centerX" id="xiR-9L-H4o"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="dQ4-Kx-B0q"/>
+                    <connections>
+                        <outlet property="button" destination="0Qu-uK-oCb" id="icd-dB-yii"/>
+                        <outlet property="picker" destination="Yhg-dV-rzw" id="2Os-zW-Ds5"/>
+                        <outlet property="winLabel" destination="kWc-KI-d2e" id="Ii5-wo-TlD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idc-LW-NXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-790" y="1370"/>
+            <point key="canvasLocation" x="-791.20000000000005" y="1369.5652173913045"/>
         </scene>
         <!--Double-->
         <scene sceneID="USI-J3-NBC">
